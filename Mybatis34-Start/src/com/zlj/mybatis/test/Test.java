@@ -94,20 +94,20 @@ public class Test {
 		test.init();		
 		UserInfo userInfo = new UserInfo();
 		//测试插入数据
-		//userInfo.setUsername("boss");
-		//userInfo.setPassword("boss98");		
+		//userInfo.setUsername("boss==");
+		//userInfo.setPassword("boss98==");		
 		//test.insert(userInfo);
 		// 测试更新数据
-		//userInfo.setId(3);
-		//userInfo.setUsername("lisi");
-		//userInfo.setPassword("8888888");
-		//test.update(userInfo);
+	//	userInfo.setId(3);
+	//	userInfo.setUsername("lisi==");
+	//	userInfo.setPassword("8888888==");
+	//	test.update(userInfo);
 		//删除数据
-		//test.delete(2);
+		test.delete(6);
 		
-		//System.out.println(test.getOne(1));	
+	//	System.out.println(test.getOne(1));	
 		
-		test.init();
+	//	test.init();
 		//test.init2();
 		List<UserInfo> userInfoList = test.getList(userInfo);
 		for(UserInfo userInfoX : userInfoList){

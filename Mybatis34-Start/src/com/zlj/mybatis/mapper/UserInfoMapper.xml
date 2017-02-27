@@ -12,7 +12,7 @@
 	<select id="getUserInfoList" parameterType="com.zlj.mybatis.domain.UserInfo" resultMap="resultListUserInfo">
         select * from user_info 
         <where>
-	        <if test="null != id"> and id = #{id:INTEGER}</if>		
+	        <if test="null != id">  id = #{id:INTEGER}</if>		
 			<if test="null != username and '' != username"> and username like concat('%',#{username:VARCHAR},'%')</if>
 			<if test="null != password and '' != password"> and password = #{password:VARCHAR}</if> 
     	</where>
